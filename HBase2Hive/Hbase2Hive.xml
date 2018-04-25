@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datacheck app_id="Hbase2Hive">
+	<jobparam>
+		<src_split_pattern>|</src_split_pattern>
+		<province_long_id>510000</province_long_id>
+		<yesterday>20180402</yesterday>
+		
+		<hive_db>remaworks_2_0</hive_db>
+		<hive_tb>TB_R_W_DNS_LOG_PARSE_C</hive_tb>
+
+		<hbase_root_dir>hdfs://hbase01-crs2:8020/hbase</hbase_root_dir>
+		<hbase_zookeeper_port>2181</hbase_zookeeper_port>
+		<hbase_zookeeper_quorum>zookeeper01-crs2,zookeeper02-crs2,zookeeper03-crs2</hbase_zookeeper_quorum>
+		<hbase_table>DWGUANGDONG200</hbase_table>
+                <hbase_table_cf>dns</hbase_table_cf>
+                <hbase_table_col1>count</hbase_table_col1>
+                <hbase_table_col2>day</hbase_table_col2>
+	</jobparam>
+</datacheck>
